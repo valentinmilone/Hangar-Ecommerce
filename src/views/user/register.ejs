@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <%- include ('../partials/head.ejs') %>
+      <link rel="stylesheet" href="/css/register.css">
+      <title>HANGAR</title>
+      <script src="../../../public/validaciones.js" defer></script>
+</head>
+
+<body>
+   <%- include ('../partials/header.ejs') %>
+
+     
+
+
+         <form action="/users/register" method="post" class="registro" id = 'registro-form' enctype="multipart/form-data">
+            <h1 id="tituloform">Regístrate</h1>
+            <label id="full_name">Escriba su nombre completo: <input type="text" class="form_input" id="full_name"
+                  name="full_name" value="<%= locals.oldData ? oldData.full_name : null %> " /></label>
+            <% if(locals.errors && errors.full_name) { %>
+               <div class="error-registro">
+                  <%= errors.full_name.msg %>
+               </div>
+               <% } %>
+               
+                  <label id="email">Correo electrónico: <input type="email" class="form_input" id="email" name="email"
+                        value="<%= locals.oldData ? oldData.email : null %> " /></label>
+                  <% if(locals.errors && errors.email) { %>
+                     <div class="error-registro">
+                        <%= errors.email.msg %>
+                     </div>
+                     <% } %>
+
+                        <label id="fnac">Fecha de nacimiento: <input type="date" class="form_input" id="fnac"
+                              name="fnac" value="<%= locals.oldData ? oldData.fnac : null %> " /></label>
+                        <% if(locals.errors && errors.fnac) { %>
+                           <div class="error-registro">
+                              <%= errors.fnac.msg %>
+                           </div>
+                           <% } %>
+                              <label id="password">Contraseña: <input type="password" class="form_input" id="password"
+                                    name="password" /></label>
+                              <% if(locals.errors && errors.password) { %>
+                                 <div class="error-registro">
+                                    <%= errors.password.msg %>
+                                 </div>
+                                 <% } %>
+                                    <label id="imagen">Imagen de perfil: <div> <input type="file" class="form_input"
+                                             id="imagen" name="imagenUsuario"
+                                             value="<%= locals.oldData ? oldData.imagenUsuario : null %> " /> </div>
+                                    </label>
+                                    <% if(locals.errors && errors.imagenUsuario) { %>
+                                       <div class="error-registro">
+                                          <%= errors.imagenUsuario.msg %>
+                                       </div>
+                                       <% } %>
+
+                                          <input type="submit" class="boton_enviar" value="Crear">
+
+
+         </form>
+
+
+</body>
+
+<script>
+
+
+
+// Aca deberian ir validaciones del front.
+// Por ahora solamente se estan validando desde el back end y enviandosela al cliente.
+
+
+
+</script>
+
+<footer>
+   <%- include ('../partials/footer.ejs') %>
+     
+</html>

@@ -1,0 +1,55 @@
+
+    <header class="head">
+
+        <div class="promociones">
+            <p>3 y 6 cuotas sin interes - 10% de descuento con transferencia</p>
+        </div>
+        <div class="logo-img">
+            <div class="logo"> <a href="/"><img id="img-principal" width="100%" src="/imagenes/logo-header.jpg" alt="HOME&DECO"></a>
+            </div>
+        </div>
+
+       <!--ACA TENDRIA QUE IR EL PERFIL DEL LOGIN--> 
+       <% if(user){ %>
+       <div class="logout">
+        <a href="/users/logout"><button style="font-size:20px">Salir<i class="fa fa-sign-out"></i></button></a></div>
+        <div class="img_user"><img src="./imagenes/users/<%-user.image%>" class="img_1" alt=""></div>
+    
+     <% }else{ %>
+        
+     
+       <div class="carrito_login"> <a href="/cart"><i class="fas fa-shopping-basket"></i></a> </div>
+       <div class="user"> <a href="/users/login"> <i class="far fa-user-circle"></i> </a> </div>
+       <div class="registro-home"> <a href="/users/register"> <i class="far fa-address-card"></i> </a> </div>
+       <% } %>
+        <!-- BARRA BUSQUEDA -->
+
+        <div class="flexsearch">
+
+            <form class="flexsearch--form" action="#" method="post">
+                <div class="flexsearch--input-wrapper">
+                    <input class="flexsearch--input" type="search" placeholder="Buscar productos">
+                </div>
+                <input class="flexsearch--submit" type="submit" value="&#10140;" />
+            </form>
+
+        </div>
+        <nav class="categorias">
+            <a href="/"> Living </a>
+
+            <a href="/"> Cocina </a>
+
+            <a href="/"> Dormitorio </a>
+
+            <a href="/"> Exterior </a>
+
+            <a href="/"> Contacto </a>
+        </nav>
+        <!-- MENU BURGER -->
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+
+
+    </header>

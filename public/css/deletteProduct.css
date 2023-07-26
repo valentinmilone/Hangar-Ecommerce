@@ -1,0 +1,90 @@
+
+.modificar-producto{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    }
+
+
+
+.name, .description, .price, .img-eliminar-product, .category, .discount, .product-tam{
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    color:rgb(82, 78, 78)
+}
+
+.container{
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    margin: auto;
+    background-color:rgb(250, 235, 215);
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.edit{
+    width: 100px;
+    align-self: center;
+    margin: 10px;
+    padding: 8px;
+    width: 80%;
+    letter-spacing: 3px;
+    border-radius: 35px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: rgb(82, 78, 78);
+    background-color:  #f6becf;
+    color: white;
+}
+
+.delete{
+    width: 100px;
+    align-self: center;
+    margin: 10px;
+    padding: 8px;
+    width: 142%;
+    letter-spacing: 3px;
+    border-radius: 35px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: rgb(82, 78, 78);
+    background-color:  #f6becf;
+    color: white;  
+    position: relative;
+    bottom: 100%;
+    right: 28%;
+}
+
+.box-buttonDelete{
+display: flex;
+justify-content: center;
+
+}
+button:hover{
+    background-color: #FFFDD0;
+    color:rgb(82, 78, 78)
+}
+
+#categoria, #descripcion, #nombre, #precio, #tamanio{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid;
+}
+
+h1{
+    text-align: center;
+}
+.encabezado{
+    margin-top: 5px;
+}
+

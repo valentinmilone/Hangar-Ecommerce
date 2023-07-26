@@ -1,0 +1,158 @@
+
+
+
+
+/*BODY*/
+
+ body{
+  
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Montserrat", Sans-serif;
+ }
+ .container{
+  display: flex;
+  justify-content: center;
+ }
+ .form-body{
+  width:400px;
+  min-width: 300;
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin:10px;
+  align-items: center;
+}
+h2{
+  text-align: center;
+  font-size: 90%;
+  font-weight: 50;
+  margin-bottom: 25px;
+  
+}
+ .form-body input {
+  display: block;
+  margin: auto;
+  height: 40px;
+  width: 75%;
+  padding-left: 10px;
+  border: 1px solid #f7d6eb;
+  border-radius: 2px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  outline: none;
+  font-family: "Montserrat", Sans-serif;
+  text-align:center;
+  }
+  .form-body i{
+    flex:1;
+    text-align: center;
+    font-size: 20px;
+    position:absolute;
+    right: 53%;
+    padding: 9px;
+  }
+  .form-body input [type= "email"]{
+    margin-top: 50px;
+  }
+  
+   ::placeholder{
+    font-size: 80%;
+    
+   }
+   .form-body input:hover{
+    border:2px solid #f7d6eb;
+   } 
+
+   .form-body button [type= "submit"]{
+    display: block;
+    margin:auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 78%;
+    background: #f7d6eb; 
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    transition:all .5s ease;
+    
+   }
+      .form-body button:hover{
+    color:#f7d6eb;
+    border: 2px solid #f7d6eb;
+    background: linear-gradient(#f7d6eb,#e81f9e );
+  
+  }
+  .contra{
+    text-align: center;
+  color:#444
+  }
+
+  .login{
+    height: 45px;
+  }
+  .login-items{
+    display: flex;
+   justify-content: center;
+
+     }
+  .login-items i{
+height: 45px;
+width: 45px;
+display: flex;
+align-items: center;
+justify-content: center;
+color:#444;
+border: 2px solid #f7d6eb;
+border-radius: 50px;
+margin: 7px  5px;
+
+  }
+
+  .categorias{
+    display: none
+  }
+
+  .error-login{
+    color: red;
+    font-size: 12px;
+  }
+
+@media(min-width: 576px){
+
+.linea{
+  display: block;
+}
+
+  
+.productos{
+  width: 30%;
+}
+
+}
+
+
+@media(min-width: 992px){
+  .productos{
+      width: 170px;
+  }
+}
+
+
+@media(min-width: 1200px){
+#imagen5{
+  display:block;
+}
+}
+
+#passwordError {
+  color:red;
+  display: none;
+}
+
+#emailError {
+  color: red;
+  display: none;
+}

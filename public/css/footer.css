@@ -1,0 +1,107 @@
+footer{
+    background-color:#cdc1b3;
+    padding: 1px
+}
+
+.fab.fa-facebook-square, .fa-instagram{
+    align-self: center;
+    font-size: 30px;
+    margin: 5px;
+    color: black
+}
+
+
+
+
+h4{
+    font-family: "Montserrat", Sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    margin-inline: auto;
+    text-decoration: underline;
+}
+
+
+.informacion {
+    flex-direction: column;
+}
+
+.redes-flex, .new-flex, .contacto-flex, .info-flex{
+    text-align:center ;
+}
+
+.piePag{
+    font-size: 14px;
+    color: #00000085;
+}
+
+.suscribite{
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.suscrib{
+background-color: #D8AF8C;
+border-radius: 5px;
+color: white;
+cursor: pointer;
+font-size: 15px;
+margin-top: 5px;
+}
+
+.newsletter{
+    text-align: center;
+    font-family: montserrat;
+    color: #00000085;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline gray
+}
+
+
+.copyright{
+    font-size: 10px;
+}
+
+
+@media(min-width: 576px){
+
+.linea{
+    display: block;
+}
+
+    .informacion{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        height: 206px;
+    }
+    
+    .redes-flex, .new-flex, .contacto-flex, .info-flex{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+    
+    h4{
+        text-decoration: overline;
+    }
+
+
+.fab.fa-facebook-square, .fab.fa-instagram{
+    cursor: pointer;}
+
+.fab.fa-facebook-square:hover, .fab.fa-instagram:hover{
+    font-size: 35px;
+}
+
+}
+
+

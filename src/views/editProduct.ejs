@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <%- include ('./partials/head.ejs') %>
+        <link rel="stylesheet" href="/css/deletteProduct.css">
+        <title>HANGAR</title>
+
+</head>
+
+<body>
+    <%- include ('./partials/header.ejs') %>
+
+        <section class="container">
+            <form class="modificar-producto" action="/product/edit/<%= productToFind.id %>?_method=PUT" method="POST">
+                <div class=" encabezado">
+                    <h1>Eliminar / Modificar Producto</h1>
+                </div>
+                    <div class="name">
+                        <label for="name">Nombre del producto</label>
+                        <input id="name" type="text" name="nombre" value="<%= productToFind.nombre %> ">
+                    </div>
+                    <div class="description">
+                        <label for="description">Descripcion del producto</label>
+                        <textarea id="description" type="text"
+                            name="descripcion"> <%= productToFind.descripcion %> </textarea>
+                    </div>
+                    <div class="img-eliminar-product">
+                        <label for="imagen">Imagen del producto</label>
+                        <input id="imagen" type="file" value="<%= productToFind.nombre %>" name="image">
+                    </div>
+                    <div class="category">
+                        <label for="category" class="form-label">Categoría:</label>
+                        <select name="producto_categoria_id" id="category" class="form-input">
+
+                            <option <% if(productToFind.producto_categoria_id=='1' ) {%>
+                                selected
+                                <% } %>
+                                    value="1" >En oferta
+                            </option>
+
+                            <option <% if(productToFind.producto_categoria_id=='2' ) {%>
+                                selected
+                                <% } %>
+                                    value="2" >Últimos visitados
+                            </option>
+
+                        </select>
+                    </div>
+
+                    <div class="discount">
+                        <label for="discount">Descuento del producto</label>
+                        <input id="discount" type="text" name="descuento" value="<%= productToFind.descuento %> ">
+                    </div>
+
+                    <div class="price">
+                        <label for="price">Precio del producto</label>
+                        <input id="price" type="text" name="precio" value="<%= productToFind.precio %> ">
+                    </div>
+
+                    <button class="edit" type="submit"> MODIFICAR</button>
+
+                </form>
+                <div class="box-buttonDelete">
+                    <form action="/product/delete/<%= productToFind.id %>?_method=DELETE" method="POST">
+                        <button type="submit" class="delete"
+                            onclick="return confirm('Estas seguro que deseas eliminar este producto?')"> ELIMINAR
+                        </button>
+                    </form>
+                </div>
+
+        </section>
+
+        <%- include ('./partials/footer.ejs') %>
+
+</body>
+
+</html>

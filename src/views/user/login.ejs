@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <%- include ('../partials/head.ejs') %>
+        <link rel="stylesheet" href="/css/stylelogin.css">
+        <title>HANGAR</title>
+
+</head>
+<%- include ('../partials/header.ejs') %>
+
+    <body>
+        <div class="container">
+
+            <form action="/users/login" method="post" id = "login">
+
+                <h2>Iniciar sesión</h2>
+                <div class="form-body">
+                    <i class="fas fa-user"></i>
+                    <input class="controls" type="email" id="email" name="email" placeholder="Usuario">
+                    <span id = "emailError">
+                        debes ingresar un email
+                    </span>
+                </div>
+                <div class="form-body">
+                    <% if(locals.errors && errors.email) { %>
+                        <div class="error-login">
+                            <%= errors.email.msg %>
+                        </div>
+                        <% } %>
+                            <i class="fas fa-lock"></i>
+                            <input class="controls" type="password" value="" id="password" name="password"
+                                placeholder="Contraseña">
+
+                                <span id = "passwordError">
+                                    la contraseña tiene que ser mayor a cinco caracteres
+                                </span>
+                </div>
+
+                <div class="form-body">
+                    <input class="buttons" type="submit" Value="Ingresar">
+                </div>
+
+                <div class="contra">
+                    <a href="#">¿Olvido su contraseña?</a>
+                </div>
+
+
+                <div class="login"> <br>
+                    <h2>Ingresar con red social</h2> <br>
+                </div>
+                <div class="login-items">
+                    <a href="#" class="fb"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="tw"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="correo"><i class="fas fa-envelope-square"></i></a><br>
+                </div>
+        </div>
+        </form>
+
+        <script> 
+        
+        const form = document.querySelector('#login')
+        let emailError = document.querySelector('#emailError')
+        let password = document.querySelector('#password')
+        let email = document.querySelector("#email")
+        let passwordError = document.querySelector("#passwordError")
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            if (password.value.length < 5){
+            passwordError.style.display = "block"
+            }
+    
+             else if (email.value.length <= 0) {
+              emailError.style.display = 'block'
+            }
+
+            else {
+                form.submit()
+            }
+         
+        })
+
+        password.addEventListener("focus", () => {
+            passwordError.style.display = "none"
+        } )
+
+        email.addEventListener('focus', () => {
+            emailError.style.display = 'none'
+        })
+
+        </script>
+
+    </body><br>
+    <%- include ('../partials/footer.ejs') %>
+
+        </body>
+
+</html>
+
+</body>
+
+</html>

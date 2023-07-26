@@ -1,0 +1,119 @@
+
+
+/*MAIN*/
+
+
+.imagen-principal-main{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-main{
+    width: 100vw;
+}
+
+.p_destacados{
+    text-align: center;
+    letter-spacing: 1.5px;
+    display: flex;
+  justify-content: center;
+  
+}
+
+.nuestroProd{
+    color: gray;
+}
+.nuestroProd:hover{
+    cursor: pointer;
+    text-decoration: underline gray
+}
+
+
+
+
+.linea{
+    align-self: center;
+    margin: 15px;
+   display: none;
+}
+
+.img_destacados{
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 15px
+}
+
+.productos{
+    margin: 10px;
+    background: #d8af8c1f;
+    padding: 16px;
+    border: solid 1px gainsboro;
+    border-radius: 5px;
+}
+
+.productos:hover{
+    box-shadow: 4px 4px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+.button-carrito-home{
+    background-color: #D8AF8C;
+    border-radius: 5px;
+    padding: 4px;
+    color: white;
+    font-size: 16px;
+    
+}
+
+.button-carrito-home{
+    cursor: pointer;
+}
+.precio{
+    letter-spacing: 2.0px;
+}
+
+.descripcion{
+    letter-spacing: 1.5px;
+}
+
+#imagen5{
+    display: none;
+}
+ 
+.HOTSALE{
+    letter-spacing: 1.5px;
+    
+}
+
+
+
+@media(min-width: 576px){
+
+.linea{
+    display: block;
+}
+
+ 
+
+.productos{
+    width: 30%;
+}
+
+}
+
+
+@media(min-width: 992px){
+    .productos{
+        width: 170px;
+    }
+}
+
+
+@media(min-width: 1200px){
+#imagen5{
+    display:block;
+}
+}

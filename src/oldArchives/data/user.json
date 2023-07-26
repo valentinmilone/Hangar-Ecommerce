@@ -1,0 +1,56 @@
+[
+ {
+  "id": 1,
+  "full_name": "MARCOS  ",
+  "email": "marcos@gmail.com",
+  "fnac": "2022-12-09",
+  "password": "$2a$10$bL",
+  "image": "1671314013519_img.jpg",
+  "rol_id": "1"
+ },
+ {
+  "id": 2,
+  "full_name": "MARENGO ANTONELLA ",
+  "email": "ANTONELLAMARENGO25@GMAIL.COM",
+  "fnac": "1994-10-25",
+  "password": "$2a$10$.D",
+  "image": "1671315366826_img.jpg",
+  "rol_id": "2"
+ },
+ {
+  "id": 3,
+  "full_name": "MENIN THIAGO",
+  "email": "THIAGO123@GMAIL.COM",
+  "fnac": "2022-12-15",
+  "password": "$2a$10$pf",
+  "image": "1671316616065_img.jpg",
+  "rol_id": "2"
+ },
+ {
+  "id": 4,
+  "full_name": "thiago",
+  "email": "menin@mail.com",
+  "fnac": "2023-01-18",
+  "password": "cI.bvvkq",
+  "image": "1673565316935_img.jpeg",
+  "rol_id": "1"
+ },
+ {
+  "id": 5,
+  "full_name": " fernando",
+  "email": "fer@gmail.com",
+  "fnac": "2023-01-01",
+  "password": "F9H6U6hW",
+  "image": "1673734627125_img.jpg",
+  "rol_id": "2"
+ },
+ {
+  "id": 6,
+  "full_name": "ANTOMARENGO",
+  "email": "ANTITO@GMAIL.COM",
+  "fnac": "2023-01-07",
+  "password": "phigjJFm89C2",
+  "image": "1673823076154_img.jpg",
+  "rol_id": "2"
+ }
+]

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <%- include ('./partials/head.ejs') %>
+        <link rel="stylesheet" href="/css/product.css">
+        <title>HANGAR</title>
+
+</head>
+
+<body>
+    <%- include ('./partials/header.ejs') %>
+
+        <article class="cuerpo">
+                <div class="container-product-detail">
+                    <div class="imagenes">
+                        <div class="img-producto-principal">
+                            <img width="100" class="img-principal" src="http://localhost:3000/imagenes/<%= productToFind.image %>" alt="Lampara"></img>
+                        </div>
+                      
+                    </div>
+                    <div class="main-article">
+                        <div class="flex-conteiner-detalle">
+                            <h1 class="titulo">
+                              <%= productToFind.nombre %> 
+                            </h1>
+                            <p class="precio">
+                               $ <%= productToFind.precio %> 
+                            </p>
+                            <div class="build-credit-card">
+                                <p><i class="far fa-credit-card"></i></p>
+                                <strong class="cuotas"> 6 </strong>
+                                <p> CUOTAS SIN INTERES DE</p>
+                                <strong class="precio-cuotas"> $ <%= (productToFind.precio  / 6).toFixed() %> </strong>
+                            </div>
+                            <div class="descuento-efectivo">
+                                <p><i class="far fa-money-bill-alt"></i></p>
+                                <strong class="porc-descuento"> <%= productToFind.descuento %> % </strong>
+                                <p>pagando en efectivo</p>
+                            </div>
+                          
+                        </div>
+
+                        <div class="container-button">
+                            <a href="/cart"><button class="button-carrito"><span>AGREGAR AL CARRITO</span></button></a>
+                        </div>
+                        <div class="button-admin">
+                            <a href="/product/create/"><button class="button-cargar"><span>CARGAR
+                                        PRODUCTO</span></button></a>
+                            <a href="/product/edit/<%= productToFind.id %>/ "><button class="button-modificar-eliminar"><span>ELIMINAR /
+                                        MODIFICAR PRODUCTO</span></button></a>
+                        </div>
+                        <div class="medios-envio">
+                            <p><i class="fas fa-shipping-fast"></i> MEDIOS DE ENVIO</p>
+                        </div>
+                        <div class="codigo-postal-y-button">
+                            <div class="codigo-postal">
+                                <label for="codigo" class="codigo-label"></label>
+                                <input class="codigo-input" name="codigo" id="codigo" type="tell"
+                                    placeholder="Ingrese su codigo postal">
+                            </div>
+                            <div>
+                                <button class="button-calcular-envio"><span>CALCULAR</span></button>
+                            </div>
+                        </div>
+                        <div class="detalle">
+                            <h3><strong>DESCRIPCION</strong></h3>
+                            <%= productToFind.descripcion %>
+                        </div>
+                    </div>
+                </div>
+        </article>
+      
+
+
+
+            <%- include ('./partials/footer.ejs') %>
+
+</body>
+
+</html>

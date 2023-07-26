@@ -1,0 +1,173 @@
+#tabla{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    margin-block-end: 10px;
+    background-color: antiquewhite;
+    box-shadow: 0em 0 0.4em olive;
+}
+
+#tabla>tbody>tr> th{
+border: solid 1px white;
+font-weight: normal;
+}
+
+#tablacabecera{
+padding: 5px;
+height: 70px;
+background-color:  #e2725b70;
+}
+
+#buttons-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    box-shadow: 0em 0 0.3em olive;
+ 
+}
+
+#buttons-container> button:hover{
+    background:  antiquewhite;
+    border-radius: 5px;
+}
+
+#buttons-container > button{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #e2725b77;
+    border: 0px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0em 0 0.3em olive;
+}
+
+#refresh-cart{
+    background-color:antiquewhite ;
+    margin: auto;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: 0em 0 0.3em olive;
+
+}
+
+
+.total-cart{
+    text-align:center;
+    width: 50vw;
+    height: 500px;
+    margin: auto;
+    margin-top: 80px;
+    margin-block-end: 80px;
+    box-shadow: 0em 0 0.4em olive;
+
+}
+
+ #total{
+    background-color:#e2725b84;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+
+
+    }
+
+.content-parcial{
+    display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.envio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.envio > #center {
+    display: flex;
+    align-self: center;
+}
+
+.envio > .aling-envio{
+    display: flex;
+    
+}
+
+#total2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#regalo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    height: 165px;
+    margin: 2px;
+    
+}
+
+#regalo>div> button{
+    background-color: #e2725b77;
+    border-radius: 5px;
+    border: solid 0px rgba(0, 0, 0, 0.549);
+    padding: 5px;
+    margin: 10px;
+    transition: .3s ease all;
+    box-shadow: 0em 0 0.3em olive;
+
+}
+
+#regalo>div> button:hover{
+ background:  #cdc1b3;;
+
+}
+
+
+#precios-envio >tbody> tr> td{
+width: 50%;
+background-color: antiquewhite;
+}
+
+ #precios-envio{
+    height: 50%;
+
+}
+
+.padding{
+    padding: 20px;
+}
+
+input[type=number]{
+    text-align: center;
+}
+
+table{
+    border: none;
+}
+
+/*MOBILE*/ 
+@media(min-width: 576px) {
+
+#regalo{
+    padding: 15px;
+}
+ #regalo> div{
+    margin-top: 6px;
+ }
+
+ #refresh-cart> i{
+   width: 75px;
+   margin-left: 80px;
+ }
+ 
+}
+
+

@@ -1,0 +1,124 @@
+.registro{
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    margin: auto;
+    background-color:rgb(250, 235, 215);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 450px;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+.form_input{
+    width: 75%;
+    color: #706c6c;
+    font-size: 1em;
+    padding: .6em .3em; 
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    font-family: 'Roboto', sans-serif; 
+}
+#tituloform{
+    text-align: center;
+}
+form #full_name{
+    text-align: center;
+    border-radius: 5px;
+    width:75%;
+    transition: .5s, color .3s;
+    font-weight: bold;
+    padding: 5px;
+
+}
+
+form #email{
+    width: 75%;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+form #fnac{
+    width: 75%;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    
+}
+form #password{
+    width: 75%;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+.boton_enviar{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    width: 50%;
+    background-color: #f6becf;
+    border-radius: 20px; 
+    border: none;
+    outline: none;
+    font-size: 1em;
+    margin-bottom: 30px;
+    margin-top: 19px;
+}
+
+#imagen{
+    border: none;
+    width: 75%;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.error-registro{
+    color: red;
+    font-size: 12px;
+}
+
+
+
+
+@media(min-width: 576px){
+
+  .linea{
+      display: block;
+  }
+  
+  
+  .productos{
+      width: 30%;
+  }
+  
+  }
+  
+@media (min-width: 769px){
+    .logo-img {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    .logo{
+        width: 100%;
+    }
+
+}
+@media(min-width: 992px){
+  .productos{
+      width: 170px;
+  }
+}
+
+
+@media(min-width: 1200px){
+#imagen5{
+  display:block;
+}
+}

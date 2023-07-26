@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "name": "Lampara Atenas",
+        "description": "Lámpara realizada con técnica tradicional y artesanal       ",
+        "image": "/imagenes/lampara1.jpg",
+        "category": "visited",
+        "color": "Beige",
+        "price": 3000,
+        "discount": 20
+    },
+    {
+        "id": 2,
+        "name": "Llavero Cloe",
+        "description": "  Delicado y practico llavero para embellecer la entrada a tu hogar  ",
+        "image": "/imagenes/llavero.jpeg",
+        "category": "in-sale",
+        "color": "violeta",
+        "price": 6000,
+        "discount": 15
+    },
+    {
+        "id": 3,
+        "name": "Bandeja iris",
+        "description": "   Esta bandeja esta íntegramente fabricada a mano y es 100% de madera maciza de Zoita.Tiene un acabado en laca poliuretánica extra mate super resistencia que no necesita mantenimiento   ",
+        "image": "/imagenes/bandeja.jpeg",
+        "category": "in-sale",
+        "color": "Beige",
+        "price": 6000,
+        "discount": 15
+    },
+    {
+        "id": 4,
+        "name": "Manta Pompeya ",
+        "description": "Manta 100% lana de oveja, tejida a mano en telar por artesanos del norte argentino.  ",
+        "image": "/imagenes/cubrecama.jpeg",
+        "category": "visited",
+        "color": "Rosa",
+        "price": 12000,
+        "discount": 10
+    },
+    {
+        "id": 5,
+        "name": "Recibidor Dallas",
+        "description": "Perchero en madera de Zoita o Kiri.  Ideal para el living o recibidor. ",
+        "image": "/imagenes/recibidor.jpeg",
+        "category": "in-sale",
+        "color": "Marron",
+        "price": 3000,
+        "discount": 10
+    }
+   
+]

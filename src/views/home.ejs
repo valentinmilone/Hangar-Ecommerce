@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <%- include ('./partials/head.ejs') %>
+        <link rel="stylesheet" href="/css/style.css">
+        <title>HANGAR</title>
+    </head>
+
+<body>
+    <%- include ('./partials/header.ejs') %>
+    <main>
+        <div class="imagen-principal-main">
+                <img class="imagen-main" src="./imagenes/IMAGEN-PORTADA.jpg" />
+        </div>
+        
+        <div class="p_destacados">
+            <div class="linea">
+                ------------------------
+            </div>
+            <a href='/product/create' class="nuestroProd">
+                 <p> CARGAR PRODUCTO  </p> </a>
+            <div class="linea">
+                ------------------------
+            </div>
+        </div>
+        
+        <div class="img_destacados">
+            <% productos.forEach(element => { %>
+                <div class="productos">
+                    <p class=""> HOT SALE!! </p>
+                   <img width="170px" height="200px" src="./imagenes/<%= element.image%>" alt="imagen producto1 ">
+                   <div class="info">
+                       <p class="descripcion"> <%= element.nombre%> </p>
+                       <p class="precio">$ <%= element.precio%> </p>
+                       <div class="container-button">
+                           <a class="boton-lampara" href="/product/detail/<%= element.id%>"> <button class="button-carrito-home"><span>Ver producto</span></button> </a>
+                       </div>
+                   </div>
+   
+               </div>
+               <% }) %> 
+
+    </main>
+
+    <%- include ('./partials/footer.ejs') %>
+
+</body>
+
+</html>

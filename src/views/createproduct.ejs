@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <%- include ('./partials/head.ejs') %>
+        <link rel="stylesheet" href="/css/createProduct.css">
+        <title>HANGAR</title>
+
+</head>
+
+<body>
+    <%- include ('./partials/header.ejs') %>
+
+        <section class="container">
+            <form class="cargar-producto" action="/product" method="POST">
+                <div class=" encabezado">
+                    <h1>Cargar Producto</h1>
+                </div>
+                <div class="name">
+                    <label for="nombre">Nombre del producto</label>
+                    <input id="nombre" type="text" name="nombre">
+                </div>
+                <div class="description">
+                    <label for="descripcion">Descripcion del producto</label>
+                    <textarea id="descripcion" type="text" name="descripcion"> </textarea>
+                </div>
+                <div class="img-cargar-product">
+                    <label for="imagen">Imagen del producto</label>
+                    <input id="imagen" type="file" name="image">
+                </div>
+                <div class="category">
+                    <label for="category" class="form-label">Categoría:</label>
+                    <select name="producto_categoria_id" id="category" class="form-input">
+                        <option value="1">En oferta</option>
+                        <option value="2" >Últimos visitados</option>
+                    </select>
+                </div>
+
+                <div class="discount">
+                    <label for="discount">Descuento del producto</label>
+                    <input id="discount" type="number" name="descuento">
+                </div>
+    
+                <div class="price">
+                    <label for="price">Precio del producto</label>
+                    <input id="precio" type="number" name="precio">
+                </div>
+
+                <button class="button-create">CARGAR</button>
+
+            </form>
+        </section>
+
+        <%- include ('./partials/footer.ejs') %>
+
+</body>
+
+</html>

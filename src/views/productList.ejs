@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <%- include ('./partials/head.ejs') %>
+        <link rel="stylesheet" href="/css/style.css">
+        <title>HANGAR</title>
+    </head>
+
+<body>
+    <%- include ('./partials/head) %>
+    <main>
+       
+        <div class="img_destacados">
+            <% products.forEach(element => { %>
+             <div class="productos">
+                <img width="170px" height="200px" src="<%= element.image%>" alt="imagen producto1 ">
+                <div class="info">
+                    <p class="descripcion"> <%= element.name%> </p>
+                    <p class="precio">$<%= element.price%> </p>
+                    <div class="container-button">
+                        <a class="boton-lampara" href="/product/detail/<%= element.id%>"> <button class="button-carrito-home"><span>Ver producto</span></button> </a>
+                    </div>
+                </div>
+
+            </div>
+            <% }) %>
+           
+            
+
+    </main>
+
+    <%- include ('./partials/footer.ejs') %>
+
+</body>
+
+</html>
